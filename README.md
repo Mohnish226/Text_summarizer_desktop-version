@@ -1,1 +1,1 @@
-# Text_summarizer_desktop-version
+# Text Summarizer (desktop-version) BE Project
