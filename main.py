@@ -1,23 +1,8 @@
-#import nltk
-#import file_reader
-#import docx2txt
-from docx import Document
+import file_reader
 
-#document = Document('/Users/Mohnish_Devadiga/Desktop/Project-Status-Report.doc')
-document = Document('/Users/Mohnish_Devadiga/Desktop/test.docx')
-for para in document.paragraphs:
-    print(para.text)
-#print(nltk.corpus.gutenberg.fileids())
-
-'''
-for names in nltk.corpus.gutenberg.fileids():
-    print(names)
-
-print(pdfread.read_pdf("/Users/Mohnish_Devadiga/Desktop/Data/resume.pdf"))
-print(pdfread.read_pdf("/Users/Mohnish_Devadiga/Desktop/Mohnish/Mohnish-Devadiga-online.pdf"))
-'''
-'''
-file_reader.read_file("/Users/Mohnish_Devadiga/Desktop/Data/resume.pdf")
-file_reader.read_docx("/Users/Mohnish_Devadiga/Desktop/Project-Status-Report.doc")
-'''
-#text = docx2txt.process("/Users/Mohnish_Devadiga/Desktop/Project-Status-Report.doc")
+# DOCX Correct File
+print(file_reader.read_file('/Users/Mohnish_Devadiga/Desktop/Data/resume.docx'))
+#DOCX Error File
+print(file_reader.read_docx('/Users/Mohnish_Devadiga/Desktop/Data/Error-Project-Status-Report.docx'))
+#PDF Correct
+print(file_reader.read_file('/Users/Mohnish_Devadiga/Desktop/Data/resume.pdf'))
