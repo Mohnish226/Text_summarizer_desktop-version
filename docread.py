@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Jan 19 00:13:48 2018
-
-@author: ADMIN
+Copmbined with file_reader
 """
 
 from docx import Document
