@@ -11,6 +11,7 @@ def read_docx(file_name):
         text = ""
         for para in document.paragraphs:
             text += para.text
+            print(para.text)
         return(1)
     except:
         return(0)
@@ -24,9 +25,11 @@ def read_pdf(file_name):
         for x in range(0, pages):
             page = file.getPage(x)
             text += page.extractText()
+        print(text)
         return(1)
     except:
         return(0)
+
 
 def read_file(file_name):
     file_ext = file_name.split(".")[-1]

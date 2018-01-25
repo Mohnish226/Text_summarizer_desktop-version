@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Copmbined with file_reader
+Created on Thu Jan 18 21:41:14 2018
+
+@author: ADMIN
 """
 
 import PyPDF2 as pypdf
