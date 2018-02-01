@@ -17,7 +17,8 @@ def topic(topic_name):
         if not data.content:
             print("Error! No Content found")
         else:
-            print(data.content)
+            #print(data.content)
+            clean(data.content)
     except:
         print("Page Error!")
     return()
@@ -31,3 +32,18 @@ def link(url):
     #print(topic_name.replace("_"," "))
     topic(topic_name.replace("_"," "))
     return
+
+def clean(content):
+    #print(content)
+    temp_content = content.split("\n\n")
+    #print(len(a))
+    #print(a[1])
+    for word in temp_content:
+        word = word.strip()
+        if "==" in word:
+            word[0]==""
+            word = word.replace("=","")
+        print(word)
+
+# Testing
+link("https://en.wikipedia.org/wiki/Battle_of_Plassey")
