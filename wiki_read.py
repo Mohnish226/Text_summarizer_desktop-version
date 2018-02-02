@@ -14,6 +14,7 @@ def topic(topic_name):
         '''
         #output_file = filepath+"/output.txt"
         #f = open(output_file,'w')
+        #print(data.content)
         if not data.content:
             print("Error! No Content found")
         else:
@@ -43,7 +44,11 @@ def clean(content):
         if "==" in word:
             word[0]==""
             word = word.replace("=","")
-        print(word)
+        #print(word)
+        print(content.summary)
 
 # Testing
-link("https://en.wikipedia.org/wiki/Battle_of_Plassey")
+#link("https://en.wikipedia.org/wiki/Battle_of_Plassey")
+
+data = wikipedia.page("Battle of Plassey")
+print(data.summary)
